@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sakshi - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="home">
+        <div class="profile_name">
+            sakshi
+            <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+            sakshi@jeemail.com
+            </div>
+            <div style="clear:both;"></div>
+            <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+            +13456764598
+            </div>
+        </div>
+    
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+        </div>    
+    </nav>
+  
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://thumbs.dreamstime.com/b/digital-illustration-woman-dressed-business-attire-holding-tablet-smiling-cartoon-woman-holding-tablet-347251190.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm sakshi! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+ <!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+  
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png"/>
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>  
+  
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg"/>
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+      </div>  
+  
+      <div class="skill">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShuEmJAUIYjZy4iVym0-uf4dDG82UsrMmBFg&s"/>
+        <h6>CSS</h6>
+        <p>2 years experience</p>
+      </div>  
+  
+      <div class="skill">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"/>
+        <h6>Python</h6>
+        <p>1.5 years experience</p>
+      </div>  
+  
+      <div class="skill">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV5MFGcGxvHFf3unQTkMq_FlwZZDE_8EBkWA&s"/>
+        <h6>Git</h6>
+        <p>1 year experience</p>
+      </div>  
+    </div>
+  </section>
+  
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Object sensor stick for blind</h3>
+            <ul>
+              <li>Developed a blind stick using ultrasonic sensors and speakers that detects objects too close to the stick</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sentiment ecommerce website</h3>
+            <ul>
+              <li>Developed an ecommerce website that sells customised tshirts incorporating things like payment portal, delivery service</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Furniture selling Website</h3>
+            <ul>
+              <li>Created a website that sells second hand furniture or lets people rent furniture.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the opportunity to work with Sakshi on a complex web development project.
+           Her dedication, problem-solving skills, and attention to detail were truly impressive.
+         She has a deep understanding of both front-end and back-end technologies, making her an invaluable asset to any team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Sakshi is a quick learner and a great team player. She not only excels in coding but also takes initiative in brainstorming innovative solutions.
+           Her ability to grasp new concepts and apply them effectively is commendable.
+           Any organization would be lucky to have her!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Sakshi has been a fantastic experience.
+           She is highly knowledgeable, adaptable, and always goes the extra mile to ensure project success.
+           Her technical expertise, combined with her collaborative mindset, makes her a great addition to any team.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+       <!-- Recommendation Form -->
+       <section id="contact">
+        <div class="flex_center">
+          <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>          
+            <input type="text" id="name_input" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="50" rows="4" placeholder="Write your recommendation..."></textarea>
+            <div class="flex_center">
+              <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+  
+      <!-- Pop-up Confirmation -->
+      <div class="popup" id="popup" style="display: none;">
+          <img src="html_finalprojimages/checkmark--outline.svg"/>
+          <h3>Thanks for submitting your recommendation</h3>
+          <button onclick="showPopup(false)">Ok</button>
+      </div>
+  
